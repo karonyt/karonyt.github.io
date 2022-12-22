@@ -69,6 +69,13 @@ a.btn--gray:hover {
   color: #fff;
   background: ##ffd700;
 }
-img:hover {
+imgm:hover {
    opacity: 0.5;
 }
+container {
+          background-position: left 50% top 115px;
+          background-image: url(omoide.png);
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+      }
