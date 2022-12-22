@@ -1,7 +1,7 @@
 nav {
   width: 110%;
   height: 110px;
-  background-color: dimgray;
+  background-color: rgba(47, 49, 54);
   padding-top: 1px;
   box-sizing: border-box;
   position: fixed;
