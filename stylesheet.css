@@ -72,6 +72,7 @@ a.btn--gray:hover {
 imgm:hover {
    opacity: 0.5;
 }
+@media screen and (min-width:481px) {
 body{
         margin:0;
       }
@@ -82,6 +83,7 @@ body{
           height: 100%;
           width: 100%;
       }
+
 @media screen and (max-width:480px) {
  body{
         margin:0;
