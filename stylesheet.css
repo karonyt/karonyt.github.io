@@ -72,7 +72,10 @@ a.btn--gray:hover {
 imgm:hover {
    opacity: 0.5;
 }
-container {
+body{
+        margin:0;
+      }
+.container {
           background-position: left 50% top 115px;
           background-image: url(https://karonyt.github.io/omoide.png);
           background-repeat: no-repeat;
