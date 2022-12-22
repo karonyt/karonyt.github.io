@@ -82,3 +82,17 @@ body{
           height: 100%;
           width: 100%;
       }
+@media screen and (max-width:480px) {
+ body{
+        margin:0;
+      }
+.container {
+          background-position: left 50% top 115px;
+          background-image: url(https://karonyt.github.io/omoide.png);
+          background-repeat: no-repeat;
+          height: 10%;
+          width: 10%;
+      }
+	
+ 
+}
