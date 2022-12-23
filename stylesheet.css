@@ -80,8 +80,8 @@ body{
           background-position: left 50% top 115px;
           background-image: url(https://karonyt.github.io/omoide.png);
           background-repeat: no-repeat;
-          height: 120%;
-          width: 120%;
+          height: 100%;
+          width: 100%;
       }
 }
 
