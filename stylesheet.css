@@ -78,7 +78,7 @@ body{
         margin:0;
       }
 .container {
-          background-position: left 50% top 115px;
+          background-position: left 50% top 125px;
           background-image: url(https://karonyt.github.io/omoide.png);
           background-repeat: no-repeat;
           height: 100%;
@@ -165,7 +165,7 @@ imgm:hover {
         margin:0;
       }
 .container {
-          background-position: right 50% top 115px;
+          background-position: right 50% top 125px;
           background-image: url(https://karonyt.github.io/omoide.png);
           background-repeat: no-repeat;
           height: 100%;
