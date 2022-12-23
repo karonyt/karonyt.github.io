@@ -168,8 +168,8 @@ imgm:hover {
           background-position: right 50% top 115px;
           background-image: url(https://karonyt.github.io/omoide.png);
           background-repeat: no-repeat;
-          height: 60%;
-          width: 60%;
+          height: 100%;
+          width: 60px;
       }
 	
  
