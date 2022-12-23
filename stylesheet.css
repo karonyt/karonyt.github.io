@@ -2,7 +2,7 @@
 @media screen and (min-width:481px) {
 nav {
   width: 110%;
-  height: 110px;
+  height: 80px;
   background-color: rgb(47, 49, 54);
   padding-top: 1px;
   box-sizing: border-box;
@@ -20,7 +20,7 @@ a {
   display: block;
   text-decoration: none;
   color: white;
-  margin-right: 35px;
+  margin-right: 15px;
 }
 a:hover {
   color: rgb(255,215,0);
@@ -89,7 +89,7 @@ body{
 @media screen and (max-width:480px) {
 nav {
   width: 110%;
-  height: 110px;
+  height: 80px;
   background-color: rgb(47, 49, 54);
   padding-top: 1px;
   box-sizing: border-box;
