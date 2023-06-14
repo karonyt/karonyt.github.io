@@ -1,176 +1,72 @@
+/* 共通のスタイル */
+body {
+  margin: 0;
+  background-color: #696969;
+  font-family: Arial, sans-serif;
+}
 
-@media screen and (min-width:481px) {
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ナビゲーションのスタイル */
 nav {
-  width: 110%;
-  height: 140px;
-  background-color: rgb(47, 49, 54);
-  padding-top: 1px;
-  box-sizing: border-box;
+  background-color: rgba(47, 49, 54, 0.9);
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  z-index: 999;
 }
-ul {
-  display: flex;
+
+.logo a {
+  font-size: 2rem;
+  font-weight: bold;
 }
-li {
+
+.menu {
   list-style: none;
-}
-a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-right: 15px;
-}
-a:hover {
-  color: rgb(255,215,0);
-}
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-.btn,
-a.btn,
-button.btn {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
-}
-.btn--gray,
-a.btn--gray {
-  color: #fff;
-  background-color: ##696969;
-}
-.btn--gray:hover,
-a.btn--gray:hover {
-  color: #fff;
-  background: ##ffd700;
-}
-imgm:hover {
-   opacity: 0.5;
-}
-body{
-        margin:0;
-      }
-.container {
-          background-position: left 50% top 145px;
-          background-image: url(https://karonyt.github.io/omoide.png);
-          background-repeat: no-repeat;
-          height: 100%;
-          width: 100%;
-      }
-}
-
-@media screen and (max-width:480px) {
-nav {
-  width: 110%;
-  height: 120px;
-  background-color: rgb(47, 49, 54);
-  padding-top: 1px;
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-ul {
   display: flex;
-}
-li {
-  list-style: none;
-}
-a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-right: 15px;
-}
-a:hover {
-  color: rgb(255,215,0);
-}
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 31.5%;
+.menu li {
+  margin: 0 10px;
 }
 
-.btn,
-a.btn,
-button.btn {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
+.menu li a {
+  font-size: 1.5rem;
+  transition: color 0.3s;
 }
-.btn--gray,
-a.btn--gray {
-  color: #fff;
-  background-color: ##696969;
+
+.menu li a:hover {
+  color: rgb(255, 215, 0);
 }
-.btn--gray:hover,
-a.btn--gray:hover {
-  color: #fff;
-  background: ##ffd700;
-}
-imgm:hover {
-   opacity: 0.5;
-}
- body{
-        margin:0;
-      }
+
+/* アニメーション */
 .container {
-          background-position: right 50% top 125px;
-          background-image: url(https://karonyt.github.io/omoide.png);
-          background-repeat: no-repeat;
-          height: 100%;
-          width: 480px;
-      }
-	
- 
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
