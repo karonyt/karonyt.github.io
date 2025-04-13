@@ -1,0 +1,135 @@
+/* Article Styles */
+.article-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.article {
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.article h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.article h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: var(--text-primary);
+}
+
+.article p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.article-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/**
+.tag {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+}
+*/
+
+/* Code Blocks */
+pre[class*="language-"] {
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+:not(pre) > code {
+    background-color: var(--bg-primary);
+    color: var(--accent);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    font-size: 0.9em;
+}
+
+/* Article Images */
+.article-image {
+    margin: 2rem 0;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.article-image figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Dark Mode Adjustments */
+/**
+[data-theme="dark"] .tag {
+    background-color: var(--accent);
+    color: var(--bg-primary);
+}
+*/
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .article {
+        padding: 1.5rem;
+    }
+
+    .article h2 {
+        font-size: 1.5rem;
+    }
+
+    .article h3 {
+        font-size: 1.25rem;
+    }
+
+    pre[class*="language-"] {
+        font-size: 0.9rem;
+    }
+}
+
+.copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #787878;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    display: none; /* ← 追加 */
+}
+
+pre:hover .copy-button {
+    display: block; /* ← 追加 */
+}
+
+.copy-button:hover {
+    opacity: 1;
+}

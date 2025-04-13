@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="nav-logo">MyWebsite</a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">ホーム</a>
+                <a href="/about.html" class="nav-link">紹介</a>
+                <a href="/info.html" class="nav-link">情報</a>
+                <a href="/articles.html" class="nav-link">記事</a>
+                <a href="/addons.html" class="nav-link">配布アドオン</a>
+                <a href="/other.html" class="nav-link">その他</a>
+                <button class="theme-toggle" aria-label="toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Articles</h1>
+                <p>技術記事やチュートリアルなど</p>
+            </div>
+        </section>
+
+        <section class="article-content">
+            <article class="article">
+                <h2>サンプル記事: JavaScriptの基本</h2>
+                <div class="article-meta">
+                    <time datetime="2024-03-20">2024年3月20日</time>
+                    <span class="tag">JavaScript</span>
+                </div>
+
+                <p>JavaScriptの基本的な使い方について説明します。</p>
+
+                <h3>変数の宣言</h3>
+                <pre><code class="language-javascript">// 変数の宣言
+let message = 'Hello, World!';
+const PI = 3.14159;
+
+// オブジェクトの例
+const user = {
+    name: 'John Doe',
+    age: 30,
+    isAdmin: false
+};</code></pre>
+
+                <h3>画像の例</h3>
+                <figure class="article-image">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="コーディングイメージ">
+                    <figcaption>プログラミングのイメージ写真</figcaption>
+                </figure>
+
+                <h3>関数の定義</h3>
+                <pre><code class="language-javascript">// アロー関数
+const greet = (name) => {
+    return `こんにちは、${name}さん！`;
+};
+
+// 関数の使用
+console.log(greet('太郎'));</code></pre>
+
+                <h3>HTMLとCSSの例</h3>
+                <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;h1&gt;タイトル&lt;/h1&gt;
+    &lt;p&gt;段落テキスト&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                <pre><code class="language-css">.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}</code></pre>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+</body>
+</html>

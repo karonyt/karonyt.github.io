@@ -39,3 +39,27 @@ document.addEventListener('click', (e) => {
         navLinks.classList.remove('active');
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("pre > code").forEach((codeBlock) => {
+        const button = document.createElement("button");
+        button.className = "copy-button";
+        button.textContent = "コピー";
+
+        button.addEventListener("click", () => {
+            const text = codeBlock.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                button.textContent = "コピーしました！";
+                setTimeout(() => {
+                    button.textContent = "コピー";
+                }, 2000);
+            }).catch((err) => {
+                console.error("コピー失敗:", err);
+            });
+        });
+
+        const pre = codeBlock.parentNode;
+        pre.style.position = "relative";
+        pre.appendChild(button);
+    });
+});
