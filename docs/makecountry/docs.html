@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - My Personal Website</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="nav-logo">MyWebsite</a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">ホーム</a>
+                <a href="/about.html" class="nav-link">紹介</a>
+                <a href="/info.html" class="nav-link">情報</a>
+                <a href="/articles.html" class="nav-link">記事</a>
+                <a href="/addons.html" class="nav-link">配布アドオン</a>
+                <a href="/other.html" class="nav-link">その他</a>
+                <button class="theme-toggle" aria-label="toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <button class="sidebar-toggle" aria-label="toggle sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 18h16"></path>
+                </svg>
+            </button>
+            <nav class="docs-nav">
+                <div class="docs-section">
+                    <h3>はじめに</h3>
+                    <ul>
+                        <li><a href="#getting-started" class="active">導入ガイド</a></li>
+                        <li><a href="#installation">インストール方法</a></li>
+                    </ul>
+                </div>
+                <div class="docs-section">
+                    <h3>基本機能</h3>
+                    <ul>
+                        <li>
+                            <a href="#basic-usage">基本的な使い方</a>
+                            <ul>
+                                <li><a href="#configuration">設定</a></li>
+                                <li><a href="#commands">コマンド一覧</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="docs-section">
+                    <h3>高度な機能</h3>
+                    <ul>
+                        <li><a href="#advanced">高度な使い方</a></li>
+                        <li>
+                            <a href="#plugins">プラグイン</a>
+                            <ul>
+                                <li><a href="#plugin-development">プラグイン開発</a></li>
+                                <li><a href="#plugin-api">プラグインAPI</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="docs-content">
+            <article>
+                <h1 id="getting-started">導入ガイド</h1>
+                <p>このドキュメントでは、プロジェクトの使い方について詳しく説明します。</p>
+
+                <h2 id="installation">インストール方法</h2>
+                <p>以下のコマンドでインストールできます：</p>
+                <pre><code class="language-bash">npm install my-project
+# または
+yarn add my-project</code></pre>
+
+                <h2 id="basic-usage">基本的な使い方</h2>
+                <p>基本的な使い方について説明します。</p>
+
+                <h3 id="configuration">設定</h3>
+                <p>設定ファイルの例：</p>
+                <pre><code class="language-javascript">module.exports = {
+    // 基本設定
+    name: 'My Project',
+    version: '1.0.0',
+    
+    // プラグイン設定
+    plugins: [
+        'plugin-one',
+        'plugin-two'
+    ]
+};</code></pre>
+
+                <h3 id="commands">コマンド一覧</h3>
+                <p>利用可能な主なコマンド：</p>
+                <ul>
+                    <li><code>start</code> - プロジェクトを開始</li>
+                    <li><code>build</code> - プロジェクトをビルド</li>
+                    <li><code>test</code> - テストを実行</li>
+                </ul>
+
+                <h2 id="advanced">高度な使い方</h2>
+                <p>高度な機能について説明します。</p>
+
+                <h2 id="plugins">プラグイン</h2>
+                <p>プラグインシステムについて説明します。</p>
+
+                <h3 id="plugin-development">プラグイン開発</h3>
+                <p>プラグインの開発方法について：</p>
+                <pre><code class="language-javascript">class MyPlugin {
+    constructor(options) {
+        this.options = options;
+    }
+
+    apply(compiler) {
+        // プラグインのロジック
+    }
+}</code></pre>
+
+                <h3 id="plugin-api">プラグインAPI</h3>
+                <p>プラグインAPIのリファレンス：</p>
+                <pre><code class="language-javascript">const api = {
+    version: '1.0.0',
+    extend: (name, fn) => {
+        // 拡張機能の実装
+    }
+};</code></pre>
+            </article>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="docs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
